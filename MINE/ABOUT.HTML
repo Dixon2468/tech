@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | DIXON TECH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="images/dixontech.png" alt="DIXON TECH Logo" class="logo"></a>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faqs.html">FAQs</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <main class="about">
+    <h3>About DIXON TECH</h3>
+    <p class="intro-text">Turning ideas into stunning visuals and functional websites.</p>
+
+    <section class="about-content">
+      <p>Hello! I’m <strong>Dixon</strong>, the creative mind behind <strong>DIXON TECH</strong>. As a passionate graphics and web designer, I blend creativity with technology to help brands tell their stories in a bold and memorable way.</p>
+      
+      <p>With years of hands-on experience, I craft:</p>
+      <ul>
+        <li>✨ Unique logos that leave a lasting impression</li>
+        <li>📦 Eye-catching business cards & flyers</li>
+        <li>🌐 Responsive, modern websites that work seamlessly on all devices</li>
+        <li>🎨 Custom graphics tailored to each client’s brand</li>
+      </ul>
+
+      <p>What drives me? It's the joy of transforming your ideas into designs that connect, inspire, and deliver real results. I believe great design is more than just looking good — it should tell a story and serve a purpose.</p>
+
+      <p>When you choose <strong>DIXON TECH</strong>, you’re not just getting a designer; you’re getting a creative partner dedicated to making your brand shine.</p>
+
+      <p>Let's create something amazing together!</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="portfolio.html">Portfolio</a> |
+      <a href="blog.html">Blog</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="faqs.html">FAQs</a>
+    </div>
+    <p>&copy; 2025 DIXON TECH. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

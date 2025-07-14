@@ -1,0 +1,163 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | DIXON TECH</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a href="index.html"><img src="images/dixontech.png" alt="DIXON TECH Logo" class="logo"></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faqs.html">FAQs</a>
+  </nav>
+</header>
+
+<section class="content">
+  <h2>About Me</h2>
+  <p>I’m Dixon, passionate about web & graphics design, blending creativity with technology to build modern digital solutions.</p>
+</section>
+
+<footer>
+  <img src="images/dixontech.png" alt="DIXON TECH Logo" class="logo-footer">
+  <div class="footer-nav">
+    <a href="index.html">Home</a> | 
+    <a href="portfolio.html">Portfolio</a> | 
+    <a href="blog.html">Blog</a> | 
+    <a href="about.html">About</a> | 
+    <a href="contact.html">Contact</a> | 
+    <a href="faqs.html">FAQs</a>
+  </div>
+  <p>&copy; 2025 DIXON TECH. All rights reserved.</p>
+</footer>
+</body>
+</html>-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | DIXON TECH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="images/dixontech.png" alt="DIXON TECH Logo" class="logo"></a>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faqs.html">FAQs</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <section class="contact">
+    <h3>Contact Me</h3>
+    <p>Have a project in mind or just want to say hello? I'd love to hear from you!</p>
+    <form action="#" method="post" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="portfolio.html">Portfolio</a> |
+      <a href="blog.html">Blog</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="faqs.html">FAQs</a>
+    </div>
+    <p>&copy; 2025 DIXON TECH. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | DIXON TECH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="images/dixontech.png" alt="DIXON TECH Logo" class="logo"></a>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faqs.html">FAQs</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <section class="contact">
+    <h3>Contact Me</h3>
+    <p>Have a project in mind or just want to say hello? I'd love to hear from you!</p>
+    <form id="contact-form" class="contact-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="portfolio.html">Portfolio</a> |
+      <a href="blog.html">Blog</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="faqs.html">FAQs</a>
+    </div>
+    <p>&copy; 2025 DIXON TECH. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Hamburger menu for mobile
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Form submit to WhatsApp
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const fullMessage = `Hello, my name is ${name} (${email}).\n\n${message}`;
+      const phone = "256727268818"; // Your WhatsApp number in international format
+
+      window.open(`https://wa.me/${phone}?text=${encodeURIComponent(fullMessage)}`, '_blank');
+    });
+  </script>
+</body>
+</html>
