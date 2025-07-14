@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | DIXON TECH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="images/dixontech.png" alt="DIXON TECH Logo" class="logo"></a>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faqs.html">FAQs</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <main class="portfolio">
+    <h3>My Portfolio</h3>
+    <p>Some of my favorite projects in graphics & web design:</p>
+
+    <section class="portfolio-section">
+      <h4>Business Cards</h4>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="images/dixontech.png" alt="Business Card 1">
+          <p>Modern Minimalist Card</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/dixontech.png" alt="Business Card 2">
+          <p>Elegant Classic Card</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-section">
+      <h4>Logos</h4>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="images/dixontech.png" alt="Logo 1">
+          <p>Bold Tech Logo</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/dixontech.png" alt="Logo 2">
+          <p>Creative Brand Logo</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-section">
+      <h4>Websites</h4>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="images/dixontech.png" alt="Website 1">
+          <p>Business Website</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/dixontech.png" alt="Website 2">
+          <p>Personal Blog</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="portfolio.html">Portfolio</a> |
+      <a href="blog.html">Blog</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="faqs.html">FAQs</a>
+    </div>
+    <p>&copy; 2025 DIXON TECH. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

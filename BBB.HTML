@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIXON TECH | Portfolio & Blog</title>
+  <style>
+    :root {
+      --primary: #1E90FF;
+      --accent: #f4f8fb;
+      --text: #333;
+      --light-text: #555;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 1.2rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: var(--accent);
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: var(--light-text);
+    }
+
+    .btn {
+      background: var(--primary);
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #187bcd;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h3 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .about p {
+      text-align: center;
+      color: var(--light-text);
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .card h4 {
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--accent);
+      color: var(--light-text);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DIXON TECH</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Designs that Connect People & Technology</h2>
+    <p>I’m Dixon, a creative graphics and web designer sharing ideas, tutorials, and projects that merge design and tech beautifully.</p>
+    <a href="#" class="btn">View Portfolio</a>
+  </section>
+
+  <section class="about">
+    <h3>About Me</h3>
+    <p>Passionate about crafting modern, human-centered designs that bring ideas to life. From websites to logos, my mission is to make technology feel approachable and beautiful.</p>
+  </section>
+
+  <section class="blog">
+    <h3>Latest Blog Posts</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Blog 1">
+        <h4>Top Web Design Trends 2025</h4>
+        <p>Discover the upcoming styles and techniques that will shape modern web design.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Blog 2">
+        <h4>How to Build a Personal Brand</h4>
+        <p>Tips and tools to create a memorable brand as a designer in the digital age.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Blog 3">
+        <h4>Behind the Scenes: Logo Process</h4>
+        <p>Take a look at how I create logos that are modern, unique and effective.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h3>Portfolio Preview</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Project 1">
+        <h4>Modern Tech Website</h4>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Project 2">
+        <h4>Creative Logo Pack</h4>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Project 3">
+        <h4>Brand Identity Design</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 DIXON TECH | Follow me on social media
+  </footer>
+</body>
+</html>
