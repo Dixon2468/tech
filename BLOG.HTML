@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | DIXON TECH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="images/dixontech.png" alt="DIXON TECH Logo" class="logo"></a>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faqs.html">FAQs</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <main class="blog">
+    <h3>Welcome to My Blog</h3>
+    <p class="intro-text">Insights, tutorials, and stories from the world of graphics and web design.</p>
+
+    <section class="blog-posts">
+
+      <article class="post">
+        <img src="images/dixontech.png" alt="Post 1">
+        <h4>Top 5 Logo Design Trends for 2025</h4>
+        <p class="date">July 12, 2025</p>
+        <p>Discover the latest logo design trends that will keep your brand looking fresh and relevant in the coming year...</p>
+        <a href="#" class="read-more">Read more</a>
+      </article>
+
+      <article class="post">
+        <img src="images/dixontech.png" alt="Post 2">
+        <h4>How to Build a Portfolio That Gets Clients</h4>
+        <p class="date">July 8, 2025</p>
+        <p>Your portfolio is your strongest tool as a designer. Here’s how to make it truly stand out and win over clients...</p>
+        <a href="#" class="read-more">Read more</a>
+      </article>
+
+      <article class="post">
+        <img src="images/dixontech.png" alt="Post 3">
+        <h4>Balancing Creativity & Function in Web Design</h4>
+        <p class="date">July 2, 2025</p>
+        <p>Learn how to design beautiful websites that don’t just look good but also offer great user experience...</p>
+        <a href="#" class="read-more">Read more</a>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="portfolio.html">Portfolio</a> |
+      <a href="blog.html">Blog</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="faqs.html">FAQs</a>
+    </div>
+    <p>&copy; 2025 DIXON TECH. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
